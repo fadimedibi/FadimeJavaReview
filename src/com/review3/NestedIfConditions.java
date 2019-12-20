@@ -47,7 +47,8 @@ public class NestedIfConditions {
 		        if (salary<50000) {
 		            System.out.println("You should buy a used car");
 		        }else {
-		            if (salary<60000) {
+		            String carMake = null;
+					if (salary<60000) {
 		                System.out.println("Save up money and wait until next year");
 		            }else if (salary>=60000 && salary<70000) {
 		            	 System.out.println("You should buy a used car");
