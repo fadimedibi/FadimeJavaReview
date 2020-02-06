@@ -12,57 +12,30 @@ public class Scanner2DArray {
 		int cols = scan.nextInt();
 
 		String[][] names = new String[rows][cols];
-		// names.length=rows
-		// names[i].length=cols
-		for (int i = 0; i < names.length; i++) {
-			for (int j = 0; j < names[i].length; j++) {
-				// String name=scan.next();
-				System.out.println("Body enter a name!");
-				if (j!=1) {
-					names[i][j]=scan.next();
-				}else {
+		// names.length = rows
+		// names[0].length = cols
+		// Entering into array
+		System.out.println("Body, enter all the names!");
+
+		for (int i = 0; i < rows; i++) {
+//			System.out.println("Body, we are at row index " + i);
+			for (int j = 0; j < cols; j++) {
+				if (j != 1) {
+					names[i][j] = scan.next();
+				} else {
 					scan.next();
 				}
-//				
-//				names[i][j] = scan.next();
-
 			}
-
 		}
-		System.out.println("Let's print the names");
+
+		System.out.println("Let's print the names!");
+
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < cols; j++) {
 				System.out.print(names[i][j] + " ");
 			}
 			System.out.println();
 		}
-System.out.println("*****************************************");
-System.out.println("Body, how many rows do you want?");
-int rows = scan.nextInt();
-System.out.println("Body, how many columns do you want?");
-int cols = scan.nextInt();
-String[][] names = new String[rows][cols];
-// names.length = rows
-// names[0].length = cols
-// Entering into array
-System.out.println("Body, enter all the names!");
-for (int i = 0; i < rows; i++) {
-//  System.out.println("Body, we are at row index " + i);
-    for (int j = 0; j < cols; j++) {
-        if (j != 1) {
-            names[i][j] = scan.next();
-        } else {
-            scan.next();
-        }
-    }
-}
-System.out.println("Let's print the names!");
-for (int i = 0; i < rows; i++) {
-    for (int j = 0; j < cols; j++) {
-        System.out.print(names[i][j] + " ");
-    }
-    System.out.println();
-}
 	}
 
 }
